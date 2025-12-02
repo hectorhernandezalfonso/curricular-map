@@ -64,7 +64,7 @@ export const curriculumData: Semester[] = [
     number: 4,
     courses: [
       { id: 'C1000027', name: 'Laboratorio de Principios de Análisis Químico', code: '1000027', pdfPath: '/pdf/1000027.pdf' },
-      { id: 'C1000030', name: 'Principios de Química Orgánica', code: '1000031', pdfPath: '/pdf/1000031.pdf' },
+      { id: 'C1000030', name: 'Principios de Química Orgánica', code: '1000030', pdfPath: '/pdf/1000030.pdf' },
       { id: 'C1000007', name: 'Ecuaciones Diferenciales', code: '1000007', pdfPath: '/pdf/1000007.pdf' },
       { id: 'C2015714', name: 'Fluidos', code: '2015714', pdfPath: '/pdf/2015714.pdf' },
       { id: 'C20155740', name: 'Termodinámica Química', code: '2015740', pdfPath: '/pdf/2015740.pdf' }
@@ -74,7 +74,7 @@ export const curriculumData: Semester[] = [
   {
     number: 5,
     courses: [
-      { id: 'C1000010', name: 'Laboratorio de Principios de Química Orgánica', code: '1000010', pdfPath: '/pdf/1000010.pdf' },
+      { id: 'C1000010', name: 'Laboratorio de Principios de Química Orgánica', code: '1000031', pdfPath: '/pdf/1000031.pdf' },
       { id: 'C2015970', name: 'Métodos Numéricos', code: '2015970', pdfPath: '/pdf/2015970.pdf' },
       { id: 'C2015703', name: 'Ingeniería Económica', code: '2015703', pdfPath: '/pdf/2015703.pdf' },
       { id: 'C2015743', name: 'Transferencia de Calor', code: '2015743', pdfPath: '/pdf/2015743.pdf' },
