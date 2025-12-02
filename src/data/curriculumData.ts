@@ -41,17 +41,17 @@ export const curriculumData: Semester[] = [
       { id: 'C1000028', name: 'Principios de Química Inorgánica', code: '1000028', pdfPath: '/pdf/1000028.pdf' },
       { id: 'C1000006', name: 'Cálculo en Varias Variables', code: '1000006', pdfPath: '/pdf/1000006.pdf' },
       { id: 'C1000013', name: 'Probabilidad y Estadística Fundamental', code: '1000013', pdfPath: '/pdf/1000013.pdf' },
-      { id: 'C20155741', name: 'Termodinámica', code: '20155741', pdfPath: '/pdf/20155741.pdf' }
+      { id: 'C20155741', name: 'Termodinámica', code: '2015741', pdfPath: '/pdf/2015741.pdf' }
     ]
   },
   {
     number: 4,
     courses: [
       { id: 'C1000027', name: 'Laboratorio de Principios de Análisis Químico', code: '1000027', pdfPath: '/pdf/1000027.pdf' },
-      { id: 'C1000030', name: 'Principios de Química Orgánica', code: '1000030', pdfPath: '/pdf/1000030.pdf' },
+      { id: 'C1000030', name: 'Principios de Química Orgánica', code: '1000031', pdfPath: '/pdf/1000031.pdf' },
       { id: 'C1000007', name: 'Ecuaciones Diferenciales', code: '1000007', pdfPath: '/pdf/1000007.pdf' },
       { id: 'C2015714', name: 'Fluidos', code: '2015714', pdfPath: '/pdf/2015714.pdf' },
-      { id: 'C20155740', name: 'Termodinámica Química', code: '20155740', pdfPath: '/pdf/20155740.pdf' }
+      { id: 'C20155740', name: 'Termodinámica Química', code: '2015740', pdfPath: '/pdf/2015740.pdf' }
     ]
   },
   {
@@ -61,7 +61,7 @@ export const curriculumData: Semester[] = [
       { id: 'C2015970', name: 'Métodos Numéricos', code: '2015970', pdfPath: '/pdf/2015970.pdf' },
       { id: 'C2015703', name: 'Ingeniería Económica', code: '2015703', pdfPath: '/pdf/2015703.pdf' },
       { id: 'C2015743', name: 'Transferencia de Calor', code: '2015743', pdfPath: '/pdf/2015743.pdf' },
-      { id: 'C2015276', name: 'Manejo de Sólidos', code: '2015276', pdfPath: '/pdf/2015276.pdf' },
+      { id: 'C2015276', name: 'Manejo de Sólidos', code: '2015726', pdfPath: '/pdf/2015726.pdf' },
       { id: 'C2015707', name: 'Balance de Energía y Equilibrio Químico', code: '2015707', pdfPath: '/pdf/2015707.pdf' }
     ]
   },
