@@ -4,6 +4,7 @@ export interface Course {
   code?: string;
   pdfPath?: string;
   type?: 'regular' | 'optional' | 'free-choice';
+  options?: string[]; 
 }
 
 export interface Semester {
@@ -23,6 +24,7 @@ export const curriculumData: Semester[] = [
       { name: 'Libre elección (3)', type: 'free-choice' }
     ]
   },
+
   {
     number: 2,
     courses: [
@@ -30,10 +32,23 @@ export const curriculumData: Semester[] = [
       { id: 'C1000005', name: 'Cálculo Integral', code: '1000005', pdfPath: '/pdf/1000005.pdf' },
       { id: 'C1000017', name: 'Fundamentos de Electricidad y Magnetismo', code: '1000017', pdfPath: '/pdf/1000017.pdf' },
       { id: 'C2015708', name: 'Balance de Materia', code: '2015708', pdfPath: '/pdf/2015708.pdf' },
-      { name: 'Optativa - Herramientas de Ingeniería (3)', type: 'optional' },
+
+      // OPTIONAL
+      {
+        name: 'Optativa - Herramientas de Ingeniería (3)',
+        type: 'optional',
+        options: [
+          'Modelado y Simulación I',
+          'Herramientas Computacionales para Ingeniería',
+          'MATLAB Aplicado a Ingeniería',
+          'Diseño Asistido por Computador (CAD)'
+        ]
+      },
+
       { name: 'Libre elección (3)', type: 'free-choice' }
     ]
   },
+
   {
     number: 3,
     courses: [
@@ -44,6 +59,7 @@ export const curriculumData: Semester[] = [
       { id: 'C20155741', name: 'Termodinámica', code: '2015741', pdfPath: '/pdf/2015741.pdf' }
     ]
   },
+
   {
     number: 4,
     courses: [
@@ -54,6 +70,7 @@ export const curriculumData: Semester[] = [
       { id: 'C20155740', name: 'Termodinámica Química', code: '2015740', pdfPath: '/pdf/2015740.pdf' }
     ]
   },
+
   {
     number: 5,
     courses: [
@@ -65,6 +82,7 @@ export const curriculumData: Semester[] = [
       { id: 'C2015707', name: 'Balance de Energía y Equilibrio Químico', code: '2015707', pdfPath: '/pdf/2015707.pdf' }
     ]
   },
+
   {
     number: 6,
     courses: [
@@ -73,31 +91,86 @@ export const curriculumData: Semester[] = [
       { id: 'C2015744', name: 'Transferencia de Masa', code: '2015744', pdfPath: '/pdf/2015744.pdf' },
       { id: 'C2015721', name: 'Laboratorio de Propiedades Termodinámicas y de Transporte', code: '2015721', pdfPath: '/pdf/2015721.pdf' },
       { id: 'C2015716', name: 'Ingeniería de las Reacciones Químicas', code: '2015716', pdfPath: '/pdf/2015716.pdf' },
-      { name: 'Taller de Ingeniería Química (2) - **Pendiente**', type: 'optional' }
+
+      // OPTIONAL
+      {
+        name: 'Taller de Ingeniería Química (2) - **Pendiente**',
+        type: 'optional',
+        options: [
+          'Taller de Seguridad Industrial',
+          'Taller de Diseño de Procesos',
+          'Taller de Optimización en Ingeniería'
+        ]
+      }
     ]
   },
+
   {
     number: 7,
     courses: [
-      { name: 'Optativa - Ciencias Económicas y Administrativas (3)', type: 'optional' },
+      {
+        name: 'Optativa - Ciencias Económicas y Administrativas (3)',
+        type: 'optional',
+        options: [
+          'Economía Industrial',
+          'Gestión Financiera',
+          'Administración Pública',
+          'Economía Ambiental'
+        ]
+      },
+
       { id: 'C2015731', name: 'Operaciones de Separación', code: '2015731', pdfPath: '/pdf/2015731.pdf' },
       { id: 'C2015719', name: 'Lab. De Fluidos, Sólidos y Transferencia de Calor', code: '2015719', pdfPath: '/pdf/2015719.pdf' },
-      { name: 'Optativa - Termodinámica (3)', type: 'optional' },
+
+      {
+        name: 'Optativa - Termodinámica (3)',
+        type: 'optional',
+        options: [
+          'Termodinámica Avanzada',
+          'Propiedades de Fluidos',
+          'Termodinámica de Reactores'
+        ]
+      },
+
       { name: 'Libre elección (3)', type: 'free-choice' },
       { name: 'Libre elección (3)', type: 'free-choice' }
     ]
   },
+
   {
     number: 8,
     courses: [
-      { name: 'Optativa - Materiales (3)', type: 'optional' },
+      {
+        name: 'Optativa - Materiales (3)',
+        type: 'optional',
+        options: [
+          'Ciencia de Materiales I',
+          'Polímeros Industriales',
+          'Materiales Cerámicos',
+          'Nanomateriales'
+        ]
+      },
+
       { id: 'C2015710', name: 'Control de Procesos', code: '2015710', pdfPath: '/pdf/2015710.pdf' },
+
       { name: 'Diseño de Productos y Procesos Químicos y Bioquímicos (3) - **Pendiente**' },
-      { name: 'Optativa - Procesos Químicos y Bioquímicos (3)', type: 'optional' },
+
+      {
+        name: 'Optativa - Procesos Químicos y Bioquímicos (3)',
+        type: 'optional',
+        options: [
+          'Bioprocesos',
+          'Tecnología Enzimática',
+          'Procesos Fermentativos',
+          'Ingeniería Bioquímica Avanzada'
+        ]
+      },
+
       { name: 'Libre elección (3)', type: 'free-choice' },
       { name: 'Libre elección - Profundización (4)', type: 'free-choice' }
     ]
   },
+
   {
     number: 9,
     courses: [
@@ -108,6 +181,7 @@ export const curriculumData: Semester[] = [
       { name: 'Libre elección - Profundización (4)', type: 'free-choice' }
     ]
   },
+
   {
     number: 10,
     courses: [
